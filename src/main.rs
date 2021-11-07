@@ -35,6 +35,7 @@ fn my_handler(e: CustomEvent, c: lambda::Context) -> Result<CustomOutput, Handle
     }
 
     Ok(CustomOutput {
-        message: format!("Hello, world! This is serverless rust babeeee"),
+        message: format!("Hello, world! This is serverless rust babeeee \n
+            Firstname {}", e.first_name),
     })
 }
